@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05060f"/><stop offset="1" stop-color="#0b1030"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f0ff"><animate attributeName="stop-color" values="#00f0ff;#b44cff;#ff3cac;#00f0ff" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#b44cff"><animate attributeName="stop-color" values="#b44cff;#ff3cac;#00f0ff;#b44cff" dur="8s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1b2a5a" stroke-width="1" opacity=".55"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00f0ff" stop-opacity="0"/><stop offset=".5" stop-color="#00f0ff" stop-opacity=".25"/><stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="1000" height="280" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1000" height="280" fill="url(#bg)"/>
+    <rect x="-40" y="-40" width="1080" height="360" fill="url(#grid)">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="40 40" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="150" cy="60" r="120" fill="#b44cff" opacity=".12"><animate attributeName="r" values="100;140;100" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="230" r="140" fill="#00f0ff" opacity=".10"><animate attributeName="r" values="120;160;120" dur="7s" repeatCount="indefinite"/></circle>
+    <rect width="1000" height="60" fill="url(#scan)"><animate attributeName="y" values="-60;280" dur="4s" repeatCount="indefinite"/></rect>
+    <g fill="#00f0ff">
+      <circle cx="120" cy="200" r="2"><animate attributeName="cy" values="280;0" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="320" cy="240" r="2"><animate attributeName="cy" values="280;0" dur="8s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="8s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="560" cy="220" r="2"><animate attributeName="cy" values="280;0" dur="7s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="7s" begin="2s" repeatCount="indefinite"/></circle>
+      <circle cx="780" cy="250" r="2"><animate attributeName="cy" values="280;0" dur="9s" begin=".5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="9s" begin=".5s" repeatCount="indefinite"/></circle>
+      <circle cx="930" cy="210" r="2"><animate attributeName="cy" values="280;0" dur="6.5s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="6.5s" begin="3s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="500" y="70" text-anchor="middle" font-family="'Courier New',monospace" font-size="16" fill="#00f0ff" letter-spacing="6">&lt; HELLO, WORLD /&gt;
+      <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
+    </text>
+    <text x="500" y="150" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="52" font-weight="800" fill="url(#neon)" filter="url(#glow)" letter-spacing="2">MUBASSIR EBNE MOHSIN
+      <animate attributeName="opacity" values="0;1" dur="1.5s" fill="freeze"/>
+    </text>
+    <text x="500" y="200" text-anchor="middle" font-family="'Courier New',monospace" font-size="19" fill="#9fb4ff" letter-spacing="4">BACKEND DEVELOPER  •  NESTJS  •  FUTURE BUILDER</text>
+    <rect x="300" y="222" width="400" height="3" rx="2" fill="url(#neon)"><animate attributeName="width" values="0;400" dur="2s" fill="freeze"/><animate attributeName="x" values="500;300" dur="2s" fill="freeze"/></rect>
+  </g>
+  <rect x="1.5" y="1.5" width="997" height="277" rx="17" fill="none" stroke="url(#neon)" stroke-width="2" opacity=".8"/>
+</svg>

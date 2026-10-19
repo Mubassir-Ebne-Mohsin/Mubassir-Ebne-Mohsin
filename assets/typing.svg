@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 70" width="100%">
+  <style>
+    text{font-family:'Courier New',monospace;font-size:26px;fill:#00f0ff;text-anchor:middle}
+    .l{opacity:0;animation:cycle 12s infinite}
+    .l2{animation-delay:3s}.l3{animation-delay:6s}.l4{animation-delay:9s}
+    @keyframes cycle{0%{opacity:0;transform:translateY(12px)}5%{opacity:1;transform:translateY(0)}22%{opacity:1;transform:translateY(0)}27%{opacity:0;transform:translateY(-12px)}100%{opacity:0}}
+  </style>
+  <text class="l" x="500" y="45">&gt; Building REST APIs with NestJS_</text>
+  <text class="l l2" x="500" y="45">&gt; Data that lives in PostgreSQL_</text>
+  <text class="l l3" x="500" y="45">&gt; Clean code. Real databases._</text>
+  <text class="l l4" x="500" y="45">&gt; Always learning. Always shipping._</text>
+</svg>
